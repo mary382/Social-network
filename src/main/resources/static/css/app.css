@@ -1,0 +1,422 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 120px;
+    font-size: 14px;
+}
+
+body,
+#main-wrapper {
+    height: 100%;
+}
+
+a,
+button,
+input {
+    outline: none !important;
+}
+
+hr {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.navbar-inverse {
+    background-color: #6464ad;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #e5e5f0;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #6464ad;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #e5e5f0;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #e5e5f0;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #50508b;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #50508b;
+    color: #ffffff;
+}
+
+.dropdown-menu .divider {
+    margin: 5px 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+textarea {
+    resize: vertical;
+    overflow-x: hidden;
+}
+
+.generic-container {
+    margin: 20px 0;
+    background-color: #FFF;
+}
+
+.full-size-container {
+    height: 65vh;
+}
+
+.inner-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal-body {
+    padding: 5px 15px;
+}
+
+.modal-header {
+    padding: 15px 15px 0 15px;
+}
+
+.panel-default > .panel-heading a {
+    color: #212121;
+}
+
+.conversation-panel {
+    min-height: 65vh;
+    margin-bottom: 0;
+}
+
+.conversation-box {
+    overflow-y: auto;
+    height: 35vh;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.conversations-search-form {
+    padding: 0 5px 5px 5px;
+}
+
+.blocked-tip {
+    display: inline-block;
+    width: 60%;
+    line-height: 1.25;
+}
+
+.validation-tip {
+    color: #e51c23;
+    font-size: 92%;
+}
+
+.home-page-picture {
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+.home-page-welcome-text {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: 300;
+    margin-bottom: 23px;
+}
+
+.reduced-kerning {
+    letter-spacing: -1px;
+}
+
+.hr-text {
+    overflow: hidden;
+    text-align: center;
+}
+
+.hr-text:before,
+.hr-text:after {
+    background-color: #bbbbbb;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 15%;
+}
+
+.hr-text:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.hr-text:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.error-code {
+    font-size: 80pt;
+    font-weight: bold;
+    margin-bottom: -40px;
+}
+
+.error-title {
+    font-size: 22pt;
+    font-weight: 500;
+}
+
+.uib-datepicker .btn {
+    border-radius:0;
+}
+
+.chat-message-wrapper::after {
+    clear: both;
+}
+
+.chat-message-wrapper::after, .chat-message-wrapper::before {
+    content: " ";
+    display: table;
+}
+
+.chat-message-wrapper .chat-user-avatar {
+    float: left;
+}
+
+.chat-message-wrapper {
+    margin: 8px 0;
+}
+
+.chat-message-wrapper ul.chat-message, .chat-message-wrapper ul.chat-message > li {
+    list-style: outside none none;
+    padding: 0;
+}
+
+.chat-message-wrapper ul.chat-message {
+    float: left;
+    margin: 0 0 0 20px;
+    max-width: 75%;
+}
+
+.chat-message-wrapper ul.chat-message > li:before {
+    border-color: transparent #f5f5f5 transparent transparent;
+    border-style: solid;
+    border-width: 0 16px 16px 0;
+    content: "";
+    left: -14px;
+    position: absolute;
+    top: 0;
+}
+
+.chat-message-wrapper ul.chat-message > li {
+    background: #f5f5f5 none repeat scroll 0 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    color: #666666;
+    font-size: 13px;
+    padding: 8px 16px;
+    position: relative;
+    word-break: break-all;
+}
+
+.chat-message-wrapper ul.chat-message > li p {
+    margin: 0;
+}
+
+.chat-message-wrapper ul.chat-message > li .chat-message-time {
+    color: #aaaaaa;
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.chat-message-wrapper.chat-message-right .chat-user-avatar {
+    float: right;
+}
+
+.chat-message-wrapper.chat-message-right ul.chat-message {
+    float: right;
+    margin-right: 24px !important;
+}
+
+.chat-message-wrapper.chat-message-right ul.chat-message > li::before {
+    border-color: transparent transparent transparent #f5f5f5;
+    border-width: 0 0 29px 29px;
+    left: auto;
+    right: -14px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #6464ad;
+    border-color: transparent;
+}
+
+.btn-primary:hover, .btn-primary:active:hover {
+    background-color: #50508b;
+}
+
+.btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary.focus {
+    background-color: #50508b;
+    border-color: transparent;
+}
+
+a {
+    color: #50508b;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #50508b;
+    text-decoration: underline;
+}
+
+textarea:focus, textarea.form-control:focus, input.form-control:focus, input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, [type=text].form-control:focus, [type=password].form-control:focus, [type=email].form-control:focus, [type=tel].form-control:focus, [contenteditable].form-control:focus {
+    -webkit-box-shadow: inset 0 -2px 0 #6464ad;
+    box-shadow: inset 0 -2px 0 #6464ad;
+}
+
+.profile-name {
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.profile-photo-lg {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.profile-photo-md {
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.post-anim.ng-enter {
+    -webkit-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.post-anim.ng-enter {
+    opacity: 0;
+    top: -50px;
+    height: 0;
+}
+
+.post-anim.ng-enter.ng-enter-active {
+    opacity: 1;
+    top: 0;
+    height: 94px;
+}
+
+.profile-anim.ng-enter,
+.profile-anim.ng-leave {
+    -webkit-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 250ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.profile-anim.ng-enter,
+.profile-anim.ng-leave.ng-leave-active {
+    opacity: 0;
+    top: -50px;
+    height: 0;
+}
+
+.profile-anim.ng-leave,
+.profile-anim.ng-enter.ng-enter-active {
+    opacity: 1;
+    top: 0;
+    height: 108px;
+}
+
+.list-item-anim.ng-enter,
+.list-item-anim.ng-leave {
+    -webkit-transition: 100ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 100ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 100ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 100ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 100ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    position: relative;
+    display: block;
+}
+
+.list-item-anim.ng-enter,
+.list-item-anim.ng-leave.ng-leave-active {
+    opacity: 0;
+    top: -30px;
+}
+
+.list-item-anim.ng-leave,
+.list-item-anim.ng-enter.ng-enter-active {
+    opacity: 1;
+    top: 0;
+}
+
+.fade-in-anim,
+fade-out-anim {
+    -webkit-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+}
+
+.fade-in-anim.ng-hide-remove,
+.fade-out-anim.ng-hide-add.ng-hide-add-active {
+    opacity: 0;
+}
+
+.fade-out-anim.ng-hide-add,
+.fade-in-anim.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+}
+
+.btn-link{
+    text-transform: capitalize
+;
+}
